@@ -1,0 +1,116 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    display: grid;
+    place-content: center;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.todo .container input{
+    
+    width: 333px;
+    height: 2rem;
+    font-size: 21px;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    padding: 0px 10px;
+    margin: auto;
+}
+
+.todo .container h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container #addTask{
+    width: 352px;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    padding: 4px;
+    margin: 0.9rem;
+    font-size: 18px;
+    background-color: #333333;
+    color: #ccc;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.container #addTask:hover{
+    color: #333333;
+    background-color: #ccc;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+.list{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    width: 350px;
+    margin-top: 2rem;
+    min-height: 500px;
+    display: flex;
+    margin: auto;
+    list-style-type: none;
+    justify-content: left;
+    
+}
+
+
+.list li{
+    padding-left: 8px;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    width: 272px;
+    height: 28px;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 1rem;
+    
+}
+
+.list .deleteTask .completeTask{
+    display: flex;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.list .deleteTask{
+    margin-right: 0.6rem;
+    margin-bottom: 6px;
+}
+
+.list .completeTask{
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    margin-left: auto;
+}
+
+.list button{
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+.completed {
+    text-decoration: line-through;
+  }
